@@ -1,44 +1,32 @@
 import React from 'react'
-import { Carousel } from 'react-bootstrap'
+import { Carousel, Button } from 'react-bootstrap'
+
+
 
 export default function Slider() {
   return (
     <div>
 
     <Carousel>
-            <Carousel.Item interval={1000}>
-                <img
-                className="d-block w-100"
-                src="holder.js/800x400?text=First slide&bg=373940"
-                alt="First slide"
+            <Carousel.Item >
+            <div>
+            <img
+                className="d-block w-100 img-fluid"
+                src="https://cdn.pixabay.com/photo/2018/01/18/17/48/purchase-3090815_960_720.jpg"
+                alt="image1"
                 />
-                <Carousel.Caption>
-                <h3>First slide label</h3>
-                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                </Carousel.Caption>
+            </div>
+                
+                <div className='carusel-position-text'>
+                
+                <h3>First slide label consectetur adipiscing elit</h3>
+                <p>Lorem ipsum dolor sit amet. Duis quis hendrerit neque, quis molestie augue. Ut consequat, erat in sagittis consectetur, elit eros posuere sem, at fermentum urna metus semper purus. Maecenas sem quam, dictum a auctor eu, varius pulvinar nisi</p>
+                <Button variant="secondary">More info</Button>
+                </div>
+                
+
             </Carousel.Item>
-            <Carousel.Item interval={500}>
-                <img
-                className="d-block w-100"
-                src="holder.js/800x400?text=Second slide&bg=282c34"
-                alt="Second slide"
-                />
-                <Carousel.Caption>
-                <h3>Second slide label</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-                <img
-                className="d-block w-100"
-                src="holder.js/800x400?text=Third slide&bg=20232a"
-                alt="Third slide"
-                />
-                <Carousel.Caption>
-                <h3>Third slide label</h3>
-                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                </Carousel.Caption>
-            </Carousel.Item>
+            
     </Carousel>
     </div>
   )

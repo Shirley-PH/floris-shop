@@ -1,4 +1,44 @@
 
+.carusel-position-text{
+  
+ position: absolute;
+  top: 30%;
+  left: 30px;
+  width: 30%;
+  text-align: center;
+  color: antiquewhite;
+}
 
-/*SASS
-@import "~bootstrap/scss/bootstrap"; */
+/* Body text*/
+.new-section{
+  background-color: #e1eaea;
+  
+  padding: 5%;
+}
+.main-group-text{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px auto;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  
+}
+.text-content{
+  text-align: center;
+  padding-top: 3%;
+}
+.box-content{
+  width: 40%;
+    margin: 5px;
+    flex: 400px; /* flex:400px is shirthand equivalent flex:1 1 400px (flex-grow:1, flex-basis:400px)*/
+}
+
+.img-group-text{
+  width:100%;
+  height: 450px;
+  
+} 
+
+/*Footer*/
