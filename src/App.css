@@ -1,6 +1,27 @@
+body{
+  font-family: 'Roboto Condensed', sans-serif;
+}
 
+/* Navegation*/
+/* Decoration of links*/
+.positionLink :link {
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none; 
+}
+
+a{
+  color: black !important;
+}
+ /* Button active*/
+ .white{
+   background-color: white;
+ }
+ .blue{
+   background-color: blue;
+ }
+/* Carrusel*/
 .carusel-position-text{
-  
  position: absolute;
   top: 30%;
   left: 30px;
@@ -12,7 +33,6 @@
 /* Body text*/
 .new-section{
   background-color: #e1eaea;
-  
   padding: 5%;
 }
 .main-group-text{
@@ -27,18 +47,26 @@
 }
 .text-content{
   text-align: center;
-  padding-top: 3%;
+  padding-top: 6%;
 }
 .box-content{
   width: 40%;
-    margin: 5px;
+  
     flex: 400px; /* flex:400px is shirthand equivalent flex:1 1 400px (flex-grow:1, flex-basis:400px)*/
 }
 
 .img-group-text{
-  width:100%;
+  width: 85%;
   height: 450px;
-  
 } 
-
+ .img-group-text right-position{
+  width: 85%;
+  height: 450px;
+  margin-right: 0;
+} 
 /*Footer*/
+ 
+ .footer-div{
+   background-color: #e64d00;
+   margin-top: 5%;
+ }

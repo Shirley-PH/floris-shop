@@ -7,10 +7,10 @@ import Footer from './Footer';
 export default function Home() {
   return (
     <div>
-    <Navegation />
-    <Slider />
-    <Body/>
-    <Footer/>
+      <Navegation />
+      <Slider />
+      <Body/>
+      <Footer/>
     </div>
   )
 }

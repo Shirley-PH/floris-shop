@@ -1,13 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import "../App.css"; 
 import {Navbar, Nav, Container } from 'react-bootstrap'; 
-//import {Link} from 'react-router-dom'; 
+import {Link} from 'react-router-dom'; 
 
 export default function Navegation(){
 
+    const [color, setColor]= useState("white");
+
     return(
         <div>
-            <Navbar  expand="sm" collapseOnSelect  sticky="top">
+            <Navbar  expand="sm" collapseOnSelect sticky="top">
              
             <Container> 
            <Navbar.Brand>
@@ -18,18 +20,18 @@ export default function Navegation(){
                 <Navbar.Collapse id="responsive-nav-bar-nav">
                    
 
-                    <Nav className="justify-content-end" style={{ width: "100%" }} activeKey="/home" >
+                    <Nav className="justify-content-end positionLink" style={{ width: "100%" }} activeKey="/home" >
 
                                 <Nav.Item>
-                                <Nav.Link to="/home"> Home</Nav.Link>
+                                <Link to="/home" className="color" onClick={() => setColor((color === "white" ? "blue" : "white"))}> Home</Link>
                                 </Nav.Item>
                                     
                                 <Nav.Item>
-                                <Nav.Link to="/about">About</Nav.Link>
+                                <Link to="/about">About</Link>
                                 </Nav.Item>
 
                                 <Nav.Item>
-                                <Nav.Link to="/contact">Contact</Nav.Link> 
+                                <Link to="/contact">Contact</Link> 
                                 </Nav.Item>
                     </Nav>
                     </Navbar.Collapse>
