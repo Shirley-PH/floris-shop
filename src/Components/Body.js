@@ -6,9 +6,9 @@ export default function Body() {
     <div>
     <div className='container'>
     {/*The first text */}
-        <h1>
+        <h3 className='brand-color'>
         Proin rhoncus diam ante. Maecenas maximus mauris et ex posuere porttitor
-        </h1>
+        </h3>
         <p>
         Duis sed egestas justo, ac faucibus est. Sed ornare id felis in accumsan. Nunc eu diam nec nunc pellentesque laoreet. Duis hendrerit in elit vel pretium. Integer leo neque, dapibus id tempus eget, tincidunt accumsan tellus.
         Quisque turpis mi, suscipit eu dui efficitur, viverra facilisis mauris.
@@ -56,9 +56,9 @@ export default function Body() {
 
 <div className='container'>
     {/*The second text */}
-        <h1>
+        <h3 className='brand-color'>
         Proin rhoncus diam ante. Maecenas maximus mauris et ex posuere porttitor
-        </h1>
+        </h3>
         <p>
         Duis sed egestas justo, ac faucibus est. Sed ornare id felis in accumsan. Nunc eu diam nec nunc pellentesque laoreet. Duis hendrerit in elit vel pretium. Integer leo neque, dapibus id tempus eget, tincidunt accumsan tellus.
         Quisque turpis mi, suscipit eu dui efficitur, viverra facilisis mauris.

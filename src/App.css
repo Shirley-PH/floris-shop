@@ -9,14 +9,22 @@ body{
   padding: 14px 16px;
   text-decoration: none; 
 }
-
+/*
 a{
   color: black !important;
-} 
+}  */
+.brand-color{
+  color: rgb(243, 151, 137); 
+  margin: 2%;
+}
  /* color active*/
  .nav-item a:hover{
-  background-color: #ff4d94;
+  background-color: rgb(243, 151, 137);
   color: white;
+ }
+ /* size of navegation */
+ .width-navbar{
+   width: 50%;
  }
 /* Carrusel*/
 .carusel-position-text{

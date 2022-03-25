@@ -1,8 +1,6 @@
 
 import "../App.css"; 
 import {Navbar, Nav} from 'react-bootstrap'; 
-import {Link} from 'react-router-dom'; 
-import { useLocation } from "react-router-dom";
 import { useState } from "react";
 
  const Navegation = () => {
@@ -13,32 +11,32 @@ import { useState } from "react";
         <div>
 
             <Navbar bg="light" variant="light" expand="sm" collapseOnSelect sticky="top">
-             
-         
-           <Navbar.Brand>
-                        FLORISTNAME
-            </Navbar.Brand>
+
+           <Nav className="brand-color">
+                      <h2> <b>FLORISTNAME</b> </h2>
+            </Nav>
 
                 <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
-                <Navbar.Collapse id="responsive-nav-bar-nav">
+                <Navbar.Collapse id="responsive-nav-bar-nav" >
                    
 
-                    <Nav className="justify-content-end positionLink" 
+ 
+                <Nav variant="tabs" className="justify-content-end positionLink width-navbar"
                     activeKey={active}
                     onSelect={(selectedKey) => setActive(selectedKey)}
-                    variant="tabs"
+                   defaultActiveKey="/"
                      style={{ width: "100%" }}>
 
-                                <Nav.Item>
-                                <Link  eventKey="default" to="/" > Home</Link>
+                                <Nav.Item >
+                                <Nav.Link   href="/" > Home</Nav.Link>
                                 </Nav.Item>
                                     
                                 <Nav.Item >
-                                <Link eventKey="link-2" to="/about">About</Link>
+                                <Nav.Link eventKey="link2" href="/about">About</Nav.Link>
                                 </Nav.Item>
 
                                 <Nav.Item>
-                                <Link eventKey="link-3"to="/contact">Contact</Link> 
+                                <Nav.Link eventKey="link3" href="/contact" >Contact</Nav.Link> 
                                 </Nav.Item>
                     </Nav>
                     </Navbar.Collapse>
