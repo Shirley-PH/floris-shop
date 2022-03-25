@@ -9,10 +9,10 @@ body{
   padding: 14px 16px;
   text-decoration: none; 
 }
-/*
+
 a{
   color: black !important;
-} */
+} 
  /* color active*/
  .nav-item a:hover{
   background-color: #ff4d94;
