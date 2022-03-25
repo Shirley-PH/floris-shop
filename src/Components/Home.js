@@ -4,13 +4,15 @@ import Slider from './Slider';
 import Body from './Body';
 import Footer from './Footer';
 
-export default function Home() {
+ function Home(){
   return (
     <div>
+    
       <Navegation />
-      <Slider />
+       <Slider />
       <Body/>
       <Footer/>
     </div>
   )
 }
+export default Home; 

@@ -38,7 +38,7 @@ export default function Body() {
         
         <div className='box-content'>
 
-        <img className="rounded img-group-text right-position" src="https://cdn.pixabay.com/photo/2018/01/28/21/07/cherry-3114714_960_720.jpg" alt='olive-flower'/>
+        <img className="rounded img-group-text right-position" src="https://cdn.pixabay.com/photo/2018/07/17/21/49/flower-bouquet-3545096_960_720.jpg" alt='olive-flower'/>
         </div>
         <div className='box-content text-content'>
         <p>

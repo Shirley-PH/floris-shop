@@ -1,17 +1,20 @@
-import React, { useState } from "react";
+
 import "../App.css"; 
-import {Navbar, Nav, Container } from 'react-bootstrap'; 
+import {Navbar, Nav} from 'react-bootstrap'; 
 import {Link} from 'react-router-dom'; 
+import { useLocation } from "react-router-dom";
+import { useState } from "react";
 
-export default function Navegation(){
-
-    const [color, setColor]= useState("white");
+ const Navegation = () => {
+     const [active, setActive] = useState("default"); 
+    
 
     return(
         <div>
-            <Navbar  expand="sm" collapseOnSelect sticky="top">
+
+            <Navbar bg="light" variant="light" expand="sm" collapseOnSelect sticky="top">
              
-            <Container> 
+         
            <Navbar.Brand>
                         FLORISTNAME
             </Navbar.Brand>
@@ -20,27 +23,34 @@ export default function Navegation(){
                 <Navbar.Collapse id="responsive-nav-bar-nav">
                    
 
-                    <Nav className="justify-content-end positionLink" style={{ width: "100%" }} activeKey="/home" >
+                    <Nav className="justify-content-end positionLink" 
+                    activeKey={active}
+                    onSelect={(selectedKey) => setActive(selectedKey)}
+                    variant="tabs"
+                     style={{ width: "100%" }}>
 
                                 <Nav.Item>
-                                <Link to="/home" className="color" onClick={() => setColor((color === "white" ? "blue" : "white"))}> Home</Link>
+                                <Link  eventKey="default" to="/" > Home</Link>
                                 </Nav.Item>
                                     
-                                <Nav.Item>
-                                <Link to="/about">About</Link>
+                                <Nav.Item >
+                                <Link eventKey="link-2" to="/about">About</Link>
                                 </Nav.Item>
 
                                 <Nav.Item>
-                                <Link to="/contact">Contact</Link> 
+                                <Link eventKey="link-3"to="/contact">Contact</Link> 
                                 </Nav.Item>
                     </Nav>
                     </Navbar.Collapse>
 
-            </Container>
-  
+             
             </Navbar>
+ 
 
+
+    
         </div>
     )
 
 }
+export default Navegation; 
