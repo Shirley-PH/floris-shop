@@ -4,7 +4,7 @@ import {TiSocialInstagram, TiSocialTwitter, TiSocialGooglePlusCircular, TiSocial
 
 export default function Footer() {
   return (
-    <div >
+    <div className='footer'>
     <Navbar className='footer-div' expand="sm" collapseOnSelect  >
              
             <Container> 
@@ -49,69 +49,3 @@ export default function Footer() {
   )
 }
 
- /* 
- <div className="text-center color-bg " style={{color:"black"}}>
-
-    <div className="container pt-4">
-    
-
-    <section className="mb-4">
-    <div>
-      
-      <a
-        class="btn btn-link  btn-lg text-dark m-1"
-        href="#!"
-        role="button"
-        data-mdb-ripple-color="dark"
-        ><TiSocialFacebookCircular /></a>
-        
-
-    
-      <a
-        className="btn btn-link  btn-lg text-dark m-1"
-        href="#!"
-        role="button"
-        data-mdb-ripple-color="dark"
-        ><TiSocialTwitter /></a>
-
-    
-      <a
-        className="btn btn-link btn-lg text-dark m-1"
-        href="#!"
-        role="button"
-        data-mdb-ripple-color="dark"
-        ><TiSocialGooglePlusCircular /></a>
-
-     
-      <a
-        className="btn btn-link  btn-lg text-dark m-1"
-        href="#!"
-        role="button"
-        data-mdb-ripple-color="dark"
-        ><i class="fab fa-instagram"></i></a>
-
-   
-      <a
-        className="btn btn-link btn-lg text-dark m-1"
-        href="#!"
-        role="button"
-        data-mdb-ripple-color="dark"
-        ><TiSocialInstagram/></a>
-      </div>
-    </section>
-   
-  </div>
- 
-
-  {/* -- Copyright and Term and Conditions-->
-  <div>
-      <div className="text-left p-3" >
-        © 2020 Copyright:
-      </div>
-      <div className="text-left p-3" >
-        Term and Conditions
-      </div>
-  </div>
-  
-    </div>
- */

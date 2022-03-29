@@ -7,6 +7,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 import {BrowserRouter} from 'react-router-dom'
 //import './App.scss'; 
 
+
 ReactDOM.render(
   <BrowserRouter>
     <App />

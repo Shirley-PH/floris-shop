@@ -1,15 +1,19 @@
 import React from 'react';
 import Navegation from './Navegation';
-import Slider from './Slider';
+import Header from './Header';
 import Body from './Body';
 import Footer from './Footer';
 
  function Home(){
+   /* 
+   This is the main body from which all components are rendered.
+   
+    It is separated by 4 main components that describe the web page
+   */
   return (
     <div>
-    
       <Navegation />
-       <Slider />
+       <Header />
       <Body/>
       <Footer/>
     </div>
